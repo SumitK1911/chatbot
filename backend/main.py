@@ -86,7 +86,7 @@ def inverseDocfre(texts):
 
     for word in all_words:
         containing_docs = sum(1 for doc in texts if word in doc)
-        idf_dict[word] = log((num_docs + 1) / (containing_docs + 1)) + 1  # Smoothing
+        idf_dict[word] = log((num_docs + 1) / (containing_docs + 1)) + 1  
 
     return idf_dict
 
